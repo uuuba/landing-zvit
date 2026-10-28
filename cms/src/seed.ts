@@ -1,4 +1,5 @@
 import type { Payload } from 'payload'
+import type { Page } from './payload-types'
 
 const homePage = {
   path: '/',
@@ -151,7 +152,7 @@ const homePage = {
       address: 'Онлайн',
     },
   ],
-}
+} satisfies Omit<Page, 'id' | 'createdAt' | 'updatedAt'>
 
 export async function seedHome(payload: Payload) {
   const existing = await payload.find({ collection: 'pages', limit: 1, depth: 0 })
