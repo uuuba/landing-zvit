@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f8fa;
+  color: #17191f;
+}
+
+.home {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+a {
+  color: #f97316;
+  font-weight: 700;
+}
